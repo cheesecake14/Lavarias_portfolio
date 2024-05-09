@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave John Lavarias Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/dave.png">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body background="img/backback.jpg" onload="document.body.style.opacity='1'">
+    
+    <div class="hero">
+        <div class="nav">
+            <div class="logo">
+                <h2>Dave Lavarias</h2>
+            </div>
+            <div class="link">
+                <ul>
+                    <li><a href="#" class="active" onclick="scrollToAbout()">About</a></li>
+                    <li><a href="#" onclick="scrollToWork()">Work</a></li>
+                    <li><a href="#" onclick="scrollToContact()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <img src="img/dave.png" alt="men" class="men">
+            <div id="about-section" class="main-detil">
+                <p>What's up!</p>
+                <p>My name is</p>
+                <h1>Dave Lavarias</h1>
+                <h4>Frontend Developer</h4>
+
+                <div class="btn">
+                    <button type="submit">Download CV</button>
+                    <button type="submit" class="btn-2">Hire Me</button>
+                </div>
+
+                <a href="https://www.instagram.com/the_.abe/">
+                    <div class="social">
+                        <i class='bx bxl-github'></i>
+                        <i class='bx bxl-facebook'></i>
+                        <i class='bx bxl-instagram'></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="sub-btn">
+            <a href="https://www.youtube.com/channel/UCNuqarJ4lTonnw8B58456bw">SUBSCRIBE</a>
+        </div>
+    </div>
+
+    <div class="about1">
+        <div id="about-section" class="main-detil">
+            <h2>About</h2>
+            <p>Hello there! I'm Dave Lavarias, a passionate Frontend Developer based in The Philippines.</p>
+            <p>With a keen eye for design and a love for coding, I strive to create beautiful and functional websites that leave a lasting impression.</p>
+            <p>I have a strong foundation in HTML, CSS, and JavaScript, and I'm always eager to learn new technologies to enhance my skills.</p>
+            <p>When I'm not coding, you will see me making original songs i post in my social medi account.</p>
+            <audio controls autoplay muted>
+                <source src="the_love_i_knew_.mp3" type="audio/ogg">
+                <source src="the_love_i_knew_.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+            
+        </div>
+    </div>
+
+    <div class="btn">
+        <div class="work">
+            <div id="work-section" class="main-detail">
+                <h2>My Work</h2>
+                <p>Welcome to my portfolio! Below are some of the projects I've worked on:</p>
+                <ul>
+                    <li><strong>Project 1:</strong> Designed and developed a responsive website for a local paint shop.</li>
+                    <li><strong>Project 2:</strong> Created Point Of Sale system using html.css.js.bootsrap</li>
+                    <li><strong>Project 3:</strong> Collaborated on a team to build an e-commerce platform with Node.js and MongoDB.</li>
+                    <img src="img/work.png" alt="work" width="1000" height="500">
+                </ul>
+                <p>Feel free to explore these projects further or contact me for more information!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="btn">
+        <div class="contact">
+            <div id="contact-section" class="main-detail">
+                <h2>Get in Touch</h2>
+                <p>If you're interested in working together or have any questions, don't hesitate to reach out!</p>
+                <p>You can contact me via email at <strong>davejohnlavarias@gmail.com</strong> or connect with me on social media:</p>
+                <ul>
+                    <li><a href="https://facebook.com/davelavarias" target="_blank">facebook</a></li>
+                    <li><a href="https://www.linkedin.com/in/davelavarias/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://instagram.com/davelavarias" target="_blank">Instagram</a></li>
+                </ul>
+                
+                <p>I look forward to hearing from you!</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        function scrollToAbout() {
+            var aboutSection = document.getElementById('about-section');
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToWork() {
+            var workSection = document.getElementById('work-section');
+            workSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToContact() {
+            var contactSection = document.getElementById('contact-section');
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>
